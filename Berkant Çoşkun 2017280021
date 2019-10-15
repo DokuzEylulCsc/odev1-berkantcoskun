@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title> Berkant Çoşkun 2017280068 </title>
+</head>
+	<body>
+	<h1> Berkant Çoşkun 2017280068 </h1>
+		<h2>2019 Güz Döneminin ilk ödevi</h2>
+		<label for="id1">Metin kutusu 1</label>
+			<input type='number' id='id1' name='id1' min='1' max'9' />
+			<br>
+		<label for="id2">Metin kutusu 2</label>
+			<input type='number' min'0' max '9' id='id2' />
+			<br><br>
+		<button onclick="toplam()"  type="button">Topla</button>
+			<br><br>
+		<label for="id3">Metin kutusu 3</label>
+			<input type='text' id='id3' />
+			<br>
+		<label for="id4">Metin kutusu 4</label>
+			<input type='text' id='id4' />
+			<br><br>
+		<button onclick="yapistir()" type="button">Yapıştır</button>
+	<script>
+      	function toplam(){	
+		var id1 =document.getElementById("id1").value;
+		var id2= document.getElementById("id2").value;	
+		var sonuc= parseInt(id1)+parseInt(id2);
+		alert(sonuc);
+		}
+	function yapistir(){
+		var id3=document.getElementById("id3").value;
+		var id4=document.getElementById("id4").value;
+		var id5= id3+id4;
+		alert(id5);
+		}
+    
+	</script>
+	</body>
+</html>
